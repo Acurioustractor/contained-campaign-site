@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #f5f7f8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-container-black: #0a0a0a;
+  --color-container-steel: #2c3e50;
+  --color-hope-green: #27ae60;
+  --color-warning-orange: #e67e22;
+  --color-system-red: #c0392b;
+  --color-light-grey: #ecf0f1;
+  --color-text-grey: #95a5a6;
+  --color-panel: rgba(22, 30, 38, 0.92);
+  --color-panel-soft: rgba(22, 30, 38, 0.82);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-bebas);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0a0a0a;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(44, 62, 80, 0.35), transparent 55%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.98) 0%, rgba(12, 18, 24, 0.98) 55%, rgba(12, 18, 24, 1) 100%);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  letter-spacing: 0.032em;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-hope-green);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(39, 174, 96, 0.35);
+}

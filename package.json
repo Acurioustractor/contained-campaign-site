@@ -1,0 +1,36 @@
+{
+  "name": "contained-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "dev:clean": "rm -rf .next && next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@notionhq/client": "^5.1.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "clsx": "^2.1.1",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "zod": "^4.1.9"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.55.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "pixelmatch": "^7.1.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

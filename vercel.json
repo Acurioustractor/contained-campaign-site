@@ -1,0 +1,40 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "regions": ["syd1", "sfo1"],
+  "functions": {
+    "src/app/api/*/route.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type, Authorization"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/#main-content",
+      "permanent": false
+    }
+  ]
+}
