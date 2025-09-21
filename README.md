@@ -1,6 +1,6 @@
-# CONTAINED microsite
+# CONTAINED Campaign Site
 
-Next.js (App Router) build for the CONTAINED youth justice campaign. Ships with Tailwind v4 token setup, Descript video embeds, and Notion-backed nomination + booking forms ready for a quick Vercel launch.
+Next.js (App Router) build for the CONTAINED youth justice campaign. Ships with Tailwind v4 token setup, Supabase video integration, and Notion-backed nomination + booking forms. Deployed via Webflow Cloud at act.place/contained.
 
 ## 1. Prerequisites
 - Node 18+ (Next.js 15 requirement)
