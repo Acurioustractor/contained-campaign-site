@@ -1,13 +1,15 @@
 {
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "startCommand": "npm start",
-  "nodeVersion": "20",
-  "rootDirectory": ".",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "environmentVariables": {
-    "NODE_ENV": "production",
-    "NEXT_TELEMETRY_DISABLED": "1"
+  "cosmic": {
+    "framework": "nextjs",
+    "buildCommand": "npm run build",
+    "startCommand": "npm start",
+    "nodeVersion": "20",
+    "rootDirectory": ".",
+    "outputDirectory": ".next",
+    "installCommand": "npm install",
+    "environmentVariables": {
+      "NODE_ENV": "production",
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
   }
 }
