@@ -69,7 +69,7 @@ export async function POST(request: Request) {
     const json = await request.json();
     const parsed = bookingSchema.parse(json);
 
-    await createNotionPage(env.bookingDatabaseId, toNotionProperties(parsed));
+    await createNotionPage(env.bookingDatabaseId, toNotionProperties(parsed) as any);
 
     return NextResponse.json({ ok: true });
   } catch (error: unknown) {
